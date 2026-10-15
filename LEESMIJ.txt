@@ -1,0 +1,27 @@
+NIEUWE WEBSITE AMEZ FACILITY SERVICES – ZO ZET JE HEM ONLINE
+===========================================================
+
+Wat zit erin
+- index.php, diensten.php, over-ons.php, werken-bij.php, offerte.php, 404.php  (de pagina's)
+- inc/        gedeelde kop, voet en bedrijfsgegevens (config.php)
+- assets/     opmaak (css) en lettertypes
+- .htaccess   nette adressen en doorverwijzingen van oude pagina's (verborgen bestand!)
+
+Gegevens aanpassen
+- Telefoon, e-mail, adres, KvK enz. staan op één plek: inc/config.php
+- Offerteaanvragen gaan naar het adres bij OFFERTE_NAAR in inc/config.php
+
+Uploaden (Cyberduck, SFTP)
+1. Maak eerst een backup: download de hele huidige websitemap naar je computer en bewaar die.
+2. Maak op de server in de websitemap een map "oude-site" en verplaats daar alle oude
+   .php- en .html-bestanden in. LAAT DE MAPPEN "img" EN "files" STAAN: het logo en de pdf's
+   (algemene voorwaarden, privacy, disclaimer) worden nog gebruikt.
+3. Upload de inhoud van deze map (niet de map zelf) naar de websitemap, inclusief .htaccess.
+   Zet in Cyberduck "Weergave > Verborgen bestanden tonen" aan om .htaccess te zien.
+4. Controleer: homepage, alle menu-items, en een oud adres zoals /glasbewassing
+   (moet doorsturen naar Diensten).
+5. Test het offerteformulier met je eigen e-mailadres en kijk of de mail aankomt
+   (ook in de spammap).
+
+Terugdraaien
+- Verwijder de nieuwe bestanden en zet de bestanden uit je backup terug.
